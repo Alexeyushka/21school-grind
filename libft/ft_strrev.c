@@ -1,36 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   count_words.c                                      :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmartyn- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/05 00:11:06 by jmartyn-          #+#    #+#             */
-/*   Updated: 2018/12/05 00:13:41 by jmartyn-         ###   ########.fr       */
+/*   Created: 2018/12/15 19:16:15 by jmartyn-          #+#    #+#             */
+/*   Updated: 2018/12/15 19:22:56 by jmartyn-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		count_words(char *s, char c)
+char	*ft_strrev(char *s)
 {
-	int words;
-	int in_substring;
+	char *start;
+	char *end;
+	char c;
 
-	in_substring = 0;
-	words = 0;
-	while (*s != '\0')
+	if (s)
 	{
-		if (in_substring == 1 && *s == c)
+		start = s;
+		end = s + (ft_strlen(s) - 1);
+		while (start < end)
 		{
-			in_substring = 0;
+			c = *start;
+			*start++ = *end;
+			*end-- = c;
 		}
-		if (in_substring == 0 && *s != c)
-		{
-			in_substring = 1;
-			words++;
-		}
-		s++;
 	}
-	return (words);
+	return (s);
 }

@@ -6,7 +6,7 @@
 /*   By: jmartyn- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/08 20:56:07 by jmartyn-          #+#    #+#             */
-/*   Updated: 2018/12/10 23:29:12 by jmartyn-         ###   ########.fr       */
+/*   Updated: 2018/12/15 19:23:11 by jmartyn-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ typedef struct		s_list
 
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
-int					count_words(char *s, char c);
+char				*ft_strrev(char *s);
 void				ft_foreach(int *tab, int length, void(*f)(int));
 int					ft_wordlen(char *s, char c);
 int					ft_intlen(int num);

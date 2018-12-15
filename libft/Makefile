@@ -6,7 +6,7 @@
 #    By: jmartyn- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/12/08 00:18:12 by jmartyn-          #+#    #+#              #
-#    Updated: 2018/12/10 22:50:46 by jmartyn-         ###   ########.fr        #
+#    Updated: 2018/12/15 19:21:26 by jmartyn-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,7 +79,7 @@ SRCS = ft_atoi.c \
 	   ft_tolower.c \
 	   ft_toupper.c \
 	   ft_wordlen.c \
-	   count_words.c \
+	   ft_strrev.c \
 
 OBJS = $(SRCS:.c=.o)
 
