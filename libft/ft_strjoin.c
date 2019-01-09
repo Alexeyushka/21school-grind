@@ -6,7 +6,7 @@
 /*   By: jmartyn- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/29 21:34:06 by jmartyn-          #+#    #+#             */
-/*   Updated: 2018/12/10 23:25:59 by jmartyn-         ###   ########.fr       */
+/*   Updated: 2019/01/09 23:33:28 by jmartyn-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,28 +16,19 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
-	size_t	i;
-	size_t	i2;
+	char	*tmp;
+	int		result_len;
 
-	i2 = 0;
-	if (s1 == NULL || s2 == NULL)
+	if (!s1 || !s2)
 		return (NULL);
-	i = ft_strlen((char *)s1) + ft_strlen((char *)s2);
-	str = (char *)malloc(sizeof(char) * (i + 1));
-	if (!(str = (char *)malloc(sizeof(char) * (i + 1))))
+	result_len = ft_strlen(s1) + ft_strlen(s2) + 1;
+	if (!(str = (char *)malloc(sizeof(*s1) * (result_len))))
 		return (NULL);
-	i = 0;
-	while (i < ft_strlen((char *)s1))
-	{
-		str[i] = s1[i];
-		i++;
-	}
-	while (i2 < ft_strlen((char *)s2))
-	{
-		str[i] = s2[i2];
-		i++;
-		i2++;
-	}
-	str[i] = '\0';
-	return (str);
+	tmp = str;
+	while (*s1)
+		*(str++) = *(s1++);
+	while (*s2)
+		*(str++) = *(s2++);
+	*str = '\0';
+	return (tmp);
 }
