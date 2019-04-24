@@ -1,0 +1,1 @@
+whois 13.32.43.26 | grep "Amazon" | grep -m1 "" | awk '{print $1}'

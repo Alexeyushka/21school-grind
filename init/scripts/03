@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Enter directory name"
+read ndir
+`mkdir $ndir`
+echo "Directory created"

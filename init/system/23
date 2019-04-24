@@ -1,0 +1,5 @@
+# graphic: sudo adduser user_name, login via GUI
+# ssh login@127.0.0.1
+# if there te connection is refused try this,it will solve the problem
+# sudo apt-get remove openssh-client openssh-server
+# sudo apt-get install openssh-client openssh-server

@@ -1,0 +1,6 @@
+ssh jmartyn-@127.0.0.1
+# if you get a faulire message, than try this:
+# Remove SSH with the following command:
+# sudo apt-get remove openssh-client openssh-server
+# Install SSH again with:
+# sudo apt-get install openssh-client openssh-server

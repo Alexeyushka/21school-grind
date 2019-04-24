@@ -1,0 +1,2 @@
+# To rename your system you need to use command "hostname" following by a new name
+hostname newname

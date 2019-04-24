@@ -1,0 +1,5 @@
+#!/bin/bash
+pgrep -u newuser
+ps -fp $(pgrep -u newuser)
+pkill -KILL -u newuser
+userdel -r newuser

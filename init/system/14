@@ -1,0 +1,2 @@
+# To run a process in the background you ned to add "&" after the command
+tail -f /var/log/syslog &

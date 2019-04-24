@@ -1,0 +1,2 @@
+# To find the installed version of your Debian, you can use the following command:
+/etc/debian_version

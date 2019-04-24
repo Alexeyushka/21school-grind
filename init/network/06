@@ -1,0 +1,8 @@
+/etc/resolv.conf
+
+#            Deduction
+# contains IP address of used DNS server
+# for example from my home computer:
+# 
+# domain Onlime
+# nameserver 192.168.199.1

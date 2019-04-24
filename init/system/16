@@ -1,0 +1,5 @@
+# to add a specific task and run it on a regular schedule
+# you can use command 'crontab'.
+# type in the terminal 'crontab -e' to see the user's account crontab file
+# you need to choose an editor for viewing the file (choose nano for example)
+# than simply add new task and add time: "m h dom mon dow command"
