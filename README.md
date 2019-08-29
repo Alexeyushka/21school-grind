@@ -1,3 +1,3 @@
 # 21school-grind
-This is 21 school repository. Committing here all my projects done during the course.
+42 School Project | piscine reloaded + libft + fillit (tetris) + init (linux basics)
 
